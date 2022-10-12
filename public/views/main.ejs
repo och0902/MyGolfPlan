@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>My Golf Plan</title>
+
+   <link rel="icon" type="image/xicon" href="/images/YStory52-logo-green.png">
+   <!-- <link rel="stylesheet" href="/styles/reset.css" > -->
+   <link rel="stylesheet" href="/styles/main.module.css" >
+   <script src="/js/jquery-1.9.1.js" defer></script>
+   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=paele7tfol" defer></script>
+   <script src="/chart.js/dist/chart.js" defer></script>
+   <script src="/js/map.js" defer></script>
+   <script src="/js/index.js" type="module" defer></script>
+</head>
+
+<body>
+   <div id="hero"> 
+      <div class="hero-container">
+         <div class="heroleft">
+            <div class="logo">
+               <img src="/images/YStory52-logo-white.png" alt="YStory52 Logo" />
+               <div class="logotitle">
+                  <h1>YStory52</h1>
+                  <h2>My Golf Plan</h2>
+               </div>
+            </div>
+            <li class="nav">
+               <ul><a href="#">About</a></ul>
+               <ul><a href="#">Information</a></ul>
+               <ul><a href="#">Contact</a></ul>
+            </li>
+            <div class="title">
+               <h1>My Golf Plan</h1>
+               <p>YStory52의 My Golf Plan은 플레이어들에게 필요한 골프장 정보 및 날씨 예측 정보등을 제공하여
+                  골퍼들의 즐겁고 편안한 플레이에 도움을 드리고자 합니다. 행복한 시간 되십시요 ~</p>
+            </div>
+         </div>
+         <div class="heroright">
+            <img src="/images/korea.png" alt="Korea Map"  />
+         </div>
+      </div>      
+   </div>
+   <div id="club-container">
+      <div class="club-title-container">
+         <h2 class="plan-start">My Golf Plan Start</h2>
+         <p id="clock"></p>         
+      </div>
+         <div class="spacer-2"></div>
+      <div id="zone-selection"></div>
+         <div class="spacer-2"></div>
+      <div id="club-name-selection"></div> 
+         <div class="spacer-2"></div>
+      <div id="map">
+         <div class="buttons">
+            <input id="NORMAL" type="button" value="일반지도" class="control-btn control-on" />
+            <input id="SATELLITE" type="button" value="위성지도" class="control-btn" />
+         </div>
+      </div>
+         <div class="spacer-2"></div>
+      <div id="plan-info-container">
+         <div id="club-info"></div>
+            <div class="spacer-2"></div>
+         <div class="weather-info">
+            <div id="weather-info-title"></div>
+               <div class="spacer-1"></div>
+            <div id="weather-info-1">
+               <h4>정보출처 : <a href="#">기상청 단기예보조회</a></h4>
+               <div id="canvas-container"></div>
+            </div>
+               <div class="spacer-2"></div>
+            <div id="weather-info-21"></div>
+               <div class="spacer-1"></div>
+            <div id="weather-info-22"></div>
+               <div class="spacer-2"></div>
+            <div id="weather-info-31"></div>
+               <div class="spacer-1"></div>
+            <div id="weather-info-32"></div>
+            <div id="weather-info-32-detail"></div>
+               <div class="spacer-2"></div>
+            <!-- <div id="weather-info-4">
+               <div id="data-container"></div>
+            </div> -->
+         </div>
+      </div>
+         <div class="spacer-4"></div>
+      <div class="footer">
+         <p>Copyright © 2022 YStory52. All Rights Reserved.</p>
+      </div>
+         <div class="spacer-4"></div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20220913&base_time=1800&nx=55&ny=127
+
+{
+   "response": {
+      "header": {
+         "resultCode": "00",
+         "resultMsg": "NORMAL_SERVICE"
+      },
+      "body": {
+         "dataType": "JSON",
+         "items": {
+            "item": [
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "PTY",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "0"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "REH",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "73"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "RN1",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "0"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "T1H",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "24.8"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "UUU",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "-1"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "VEC",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "49"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "VVV",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "-0.8"
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1800",
+                  "category": "WSD",
+                  "nx": 55,
+                  "ny": 127,
+                  "obsrValue": "1.4"
+               }
+            ]
+         },
+         "pageNo": 1,
+         "numOfRows": 10,
+         "totalCount": 8
+      }
+   }
+}
+
+
+
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20220913&base_time=1800&nx=55&ny=127
+
+{
+   "response": {
+      "header": {
+         "resultCode": "00",
+         "resultMsg": "NORMAL_SERVICE"
+      },
+      "body": {
+         "dataType": "JSON",
+         "items": {
+            "item": [
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1900",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2000",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2100",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2200",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2300",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "LGT",
+                  "fcstDate": "20220914",
+                  "fcstTime": "0000",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "PTY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1900",
+                  "fcstValue": "5",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "PTY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2000",
+                  "fcstValue": "1",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "PTY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2100",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1830",
+                  "category": "PTY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "2200",
+                  "fcstValue": "5",
+                  "nx": 55,
+                  "ny": 127
+               }
+            ]
+         },
+         "pageNo": 1,
+         "numOfRows": 10,
+         "totalCount": 60
+      }
+   }
+}
+
+
+
+
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20220913&base_time=1700&nx=55&ny=127
+
+{
+   "response": {
+      "header": {
+         "resultCode": "00",
+         "resultMsg": "NORMAL_SERVICE"
+      },
+      "body": {
+         "dataType": "JSON",
+         "items": {
+            "item": [
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "TMP",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "26",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "UUU",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "-1.4",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "VVV",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "-0.8",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "VEC",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "62",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "WSD",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "1.7",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "SKY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "4",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "PTY",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "POP",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "30",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "WAV",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "0",
+                  "nx": 55,
+                  "ny": 127
+               },
+               {
+                  "baseDate": "20220913",
+                  "baseTime": "1700",
+                  "category": "PCP",
+                  "fcstDate": "20220913",
+                  "fcstTime": "1800",
+                  "fcstValue": "강수없음",
+                  "nx": 55,
+                  "ny": 127
+               }
+            ]
+         },
+         "pageNo": 1,
+         "numOfRows": 10,
+         "totalCount": 954
+      }
+   }
+}
+
+
+
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getFcstVersion?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&ftype=ODAM&basedatetime=202209130800
+
+{
+   "response": {
+      "header": {
+         "resultCode": "00",
+         "resultMsg": "NORMAL_SERVICE"
+      },
+      "body": {
+         "dataType": "JSON",
+         "items": {
+            "item": [
+               {
+                  "filetype": "ODAM",
+                  "version": "20220913092229"
+               }
+            ]
+         },
+         "pageNo": 1,
+         "numOfRows": 10,
+         "totalCount": 1
+      }
+   }
+}

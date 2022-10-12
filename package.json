@@ -1,0 +1,25 @@
+{
+  "name": "my-gold-weather",
+  "version": "1.0.0",
+  "description": "My Golf Weather",
+  "main": "my-golf-weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon my-golf-weather.js"
+  },
+  "keywords": [
+    "gold",
+    "weather"
+  ],
+  "author": "Oh ChangHo",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^3.9.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.7"
+  }
+}

@@ -1,0 +1,12 @@
+
+초단기실황조회
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=9999&pageNo=1&dataType=JSON&base_date=20220925&base_time=1800&nx=55&ny=127
+
+초단기예보조회
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=9999&pageNo=1&dataType=JSON&base_date=20220925&base_time=1800&nx=55&ny=127
+
+단기예보조회
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=9999&pageNo=1&dataType=JSON&base_date=20220925&base_time=1700&nx=55&ny=127
+
+예보버전조회
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getFcstVersion?serviceKey=AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D&numOfRows=9999&pageNo=1&dataType=JSON&ftype=ODAM&basedatetime=202209130800

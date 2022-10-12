@@ -1,2 +1,2 @@
 # MyGolfPlan
-My Golf Plan
+My Golf Plan Application

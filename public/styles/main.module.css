@@ -1,0 +1,566 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* border: 1px solid red; */
+}
+
+body p,
+body ul,
+body span,
+table {
+   font-size: 16px;
+}
+
+#hero {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent), url('/images/hero.jpg');   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+
+.hero-container {
+   width: 94%;
+   height: 100vh;
+   margin: auto;
+   position: relative;
+   display: flex;
+}
+
+.heroleft {
+   flex-basis: 50%;
+   width: 100%;
+   margin: 10vh 0;
+   color: white;
+   position: relative;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   width: 115px;
+   height: 91px;   
+}
+
+.logotitle h1,
+.logotitle h2 {
+   margin: 0 15px;
+}
+
+.nav {
+   margin-top: 30px;
+   list-style: none;
+}
+
+.nav ul {
+   display: inline-block;
+   margin: 0 20px;
+   padding: 10px;
+   font-weight: 500;
+}
+
+.nav ul a {
+   text-decoration: none;
+   color: white;
+}
+
+.title {
+   position: absolute;
+   bottom: 5vh;
+}
+
+.title h1 {
+   font-size: 90px;
+   margin-bottom: 30px;
+}
+
+.title p {
+   line-height: 40px;
+}
+
+.heroright {
+   flex-basis: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.heroright img {
+   width: 75%;
+}
+
+.spacer-1 {
+   margin: 3vh auto;
+}
+
+.spacer-2  {
+   margin: 6vh auto;
+}
+
+.spacer-3 {
+   margin: 10vh auto;
+}
+
+.spacer-4 {
+   margin: 15vh auto;
+}
+
+#club-container {
+   width: 94%;
+   margin: auto;
+   margin-top: 10vh;
+}
+
+#club-container h1 {
+   font-size: 30px;
+}
+
+#club-container h3 {
+   margin-bottom: 20px;
+}
+
+.club-title-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.club-title-container h2 {
+   margin: 15px 0;
+}
+
+.club-title-container p {
+   margin: 15px 30px 15px 0;
+}
+
+.plan-start {
+   cursor: pointer;
+   padding: 9px 30px;
+   border: 1px solid gray;
+   border-radius: 25px;
+   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+   transition: 0.3s;
+}
+
+.plan-start:hover {
+   color:#fff; 
+   border: 1px solid green;
+   background-color: green;
+   box-shadow: 5px 5px 5px 2px rgba(0, 128, 0, 0.2);
+}
+
+#zone-selection h3 {
+   padding: 10px 20px;
+   border-bottom: 1px solid gray;
+}
+
+#zone-selection div {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#zone-selection div span {
+   flex-basis: 15%;
+   margin: 5px 0;
+   padding: 5px 0;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+#zone-selection div span:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+#club-name-selection h3 {
+   padding: 10px 20px;
+   border-bottom: 1px solid gray;
+}
+
+#club-name-selection div {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#club-name-selection div span {
+   flex-basis: 20%;
+   margin: 5px 0;
+   padding: 5px 0;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+#club-name-selection div span:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+#map {
+   margin-top: 2vh;
+   width: 100%;
+   height: 80vh;
+}
+
+#map .buttons {
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   z-index: 10;
+   padding: 20px;
+}
+
+#map .buttons .control-btn {
+   margin: 10px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 1px solid gray;
+   cursor: pointer;
+   background-color: #fff;
+   opacity: 0.75;
+}
+
+#plan-info-container {
+   display: none;
+   width: 100%;
+   margin: auto;
+}
+
+#club-info h3 {
+   padding: 10px 20px;
+   border-bottom: 1px solid gray;
+}
+
+#club-info h3 a {
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #000;
+   transition: 0.3s;
+}
+
+#club-info div {
+   margin: 5px 0;
+   padding: 5px 0;
+}
+
+.club-info-details {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.club-info-details span {
+   flex-basis: 50%;
+   margin: 5px 0;
+}
+
+#club-info div span a {   
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #000;
+   transition: 0.3s;
+}
+
+#club-info h3 a:hover,
+#club-info div span a:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+.weather-info {
+   width: 100%;
+}
+
+.weather-info h4 {
+   margin: 20px 0;
+}
+
+.weather-info p {
+   margin: 20px 0;
+}
+
+.weather-info h4 a {
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #000;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.weather-info h4 a:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+#weather-info-title h3 {
+   padding: 10px 20px;
+   border-bottom: 1px solid gray;
+}
+
+#weather-info-title h3 a {
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #000;
+   transition: 0.3s;
+}
+
+#weather-info-title h3 a:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+#weather-info-1 {
+   width: 100%;
+}
+
+#weather-info-1 div {
+   display: flex;
+   flex-wrap: wrap;  
+}
+
+#weather-info-1 span {
+   flex: 20%;
+}
+
+table {
+   width: 100%;
+   margin: 0;
+   border-spacing: 0;
+   border-collapse: collapse;
+   text-align: center;
+}
+
+th, td {
+   height: 40px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+th {
+   border-top: 1px solid #ddd;
+   border-bottom: 2px solid #aaa;
+   font-weight: 600;
+}
+
+tr:last-child {
+   border-bottom: 1px solid #ddd;
+}
+
+td a {
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #000;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+td a:hover {
+   color:#fff;
+   background-color: green;
+   border-radius: 5px;
+}
+
+#weather-info-11 th:nth-child(1) { width: 20% }
+#weather-info-11 th:nth-child(2) { width: 15% }
+#weather-info-11 th:nth-child(3) { width: 15% }
+#weather-info-11 th:nth-child(4) { width: 15% }
+#weather-info-11 th:nth-child(5) { width: 15% }
+#weather-info-11 th:nth-child(6) { width: 20% }
+
+#weather-info-21 th:nth-child(1) { width: 16% }
+#weather-info-21 th:nth-child(2) { width: 14% }
+#weather-info-21 th:nth-child(3) { width: 14% }
+#weather-info-21 th:nth-child(4) { width: 14% }
+#weather-info-21 th:nth-child(5) { width: 14% }
+#weather-info-21 th:nth-child(6) { width: 14% }
+#weather-info-21 th:nth-child(7) { width: 14% }
+
+#weather-info-22 th:nth-child(1) { width: 21% }
+#weather-info-22 th:nth-child(2) { width: 14% }
+#weather-info-22 th:nth-child(3) { width: 12% }
+#weather-info-22 th:nth-child(4) { width: 13% }
+#weather-info-22 th:nth-child(5) { width: 12% }
+#weather-info-22 th:nth-child(6) { width: 14% }
+#weather-info-22 th:nth-child(6) { width: 14% }
+
+#weather-info-31 th:nth-child(1) { width: 16% }
+#weather-info-31 th:nth-child(2) { width: 12% }
+#weather-info-31 th:nth-child(3) { width: 12% }
+#weather-info-31 th:nth-child(4) { width: 12% }
+#weather-info-31 th:nth-child(5) { width: 12% }
+#weather-info-31 th:nth-child(6) { width: 12% }
+#weather-info-31 th:nth-child(7) { width: 12% }
+#weather-info-31 th:nth-child(8) { width: 12% }
+
+#weather-info-32 th:nth-child(1) { width: 20% }
+#weather-info-32 th:nth-child(2) { width: 20% }
+#weather-info-32 th:nth-child(3) { width: 13% }
+#weather-info-32 th:nth-child(4) { width: 19% }
+#weather-info-32 th:nth-child(6) { width: 13% }
+#weather-info-32 th:nth-child(7) { width: 14% }
+
+#weather-info-32-detail th:nth-child(1) { width: 16% }
+#weather-info-32-detail th:nth-child(2) { width: 20% }
+#weather-info-32-detail th:nth-child(3) { width: 16% }
+#weather-info-32-detail th:nth-child(4) { width: 16% }
+#weather-info-32-detail th:nth-child(5) { width: 16% }
+#weather-info-32-detail th:nth-child(6) { width: 16% }
+
+#canvas-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+canvas {
+   flex-basis: 50%;
+}
+
+.footer {
+   width: 94%;
+   margin: auto;
+}
+
+.footer p {
+   text-align: center;
+}
+
+@media screen and (max-width : 1200px) {
+   .heroleft {
+      flex-basis: 75%;
+   }
+
+   .title h1 {
+      font-size: 70px;
+   }
+
+   .heroright {
+      flex-basis: 0%;
+   }
+
+   #zone-selection div span {
+      flex-basis: 33%;
+   }
+
+   #club-name-selection div span {
+      flex-basis: 33%;
+   }
+
+   canvas {
+      flex-basis: 100%;
+      width: 100%;
+   }
+   
+}
+
+@media screen and (max-width : 768px) {
+   body p,
+   body ul,
+   body span,
+   table {
+      font-size: 13px;
+   }
+
+   .heroleft {
+      flex-basis: 100%;
+   }
+
+   .logo img {
+      width: 100px;
+      height: 79px;   
+   }
+   
+   .logotitle h1,
+   .logotitle h2 {
+      font-size: 24px;
+   }
+
+   .nav ul {
+      margin: 0 10px;
+      padding: 5px;
+   }
+   
+   .title h1 {
+      font-size: 50px;
+   }
+
+   .club-title-container {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   
+   #zone-selection div span {
+      flex-basis: 50%;
+   }
+
+   #club-name-selection div span {
+      flex-basis: 50%;
+   }
+
+   .club-info-details {
+      flex-direction: column;
+   }
+
+   th, td {
+      font-size: 12px;
+   }
+
+   #weather-info-31 th:nth-child(3), #weather-info-31 td:nth-child(3) { display: none; }
+   #weather-info-31 th:nth-child(7), #weather-info-31 td:nth-child(7) { display: none; }
+   #weather-info-31 th:nth-child(8), #weather-info-31 td:nth-child(8) { display: none; }
+
+   #weather-info-21 th:nth-child(7), #weather-info-21 td:nth-child(7) { display: none; }
+}
+
+
+@media screen and (max-height: 600px) {
+   .heroleft {
+      margin: 5vh 0;
+   }
+   
+   .logo {
+      margin: 5vh 0;
+      display: flex;
+      align-items: center;
+   }
+   
+   .logo img {
+      width: 86px;
+      height: 68px;
+      margin: 0 15px;
+   }
+   
+   .logotitle h1,
+   .logotitle h2 {
+      margin: 0 10px;
+   }
+   
+   .nav {
+      display: none;
+   }
+   
+   .title {
+      bottom: 0;
+      margin-left: 20px;
+   }
+   
+   .title h1 {
+      font-size: 40px;
+      margin-bottom: 0;
+   }
+   .title p {
+      line-height: 30px;
+      margin-bottom: 10px;
+   }
+}

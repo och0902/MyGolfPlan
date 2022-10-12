@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>기상청 초단기실황</title>
+   <style>
+
+      .container {
+         width: 98%;
+         margin: 10px;
+      }
+
+      input, button {
+         margin: 10px;
+         padding: 10px;
+      }
+
+      table {
+         width: 100%;
+         margin: 0;
+         border-spacing: 0;
+         border-collapse: collapse;
+         text-align: center;
+      }
+
+      th, td {
+         height: 40px;
+      }
+
+      th {
+         border-top: 1px solid #ddd;
+         border-bottom: 2px solid #aaa;
+      }
+
+      tr:last-child {
+         border-bottom: 1px solid #eee;
+      }
+
+      td a {
+         text-decoration: none;
+         color: #000;
+         cursor: pointer;
+      }
+
+      td a:hover {
+         text-decoration: underline;
+      }
+
+      #data-container th:nth-child(1) { width: 15% }
+      #data-container th:nth-child(2) { width: 15% }
+      #data-container th:nth-child(3) { width: 15% }
+      #data-container th:nth-child(4) { width: 15% }
+      #data-container th:nth-child(5) { width: 15% }
+      #data-container th:nth-child(6) { width: 15% }
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      
+      <p>기상청 초단기실황조회</p>
+      <label>날짜 (YYYYMMDD) : </label><input type="text" name="baseDate" id="baseDate">
+      <label>시간 (HHMM) : </label><input type="text" name="baseTime" id="baseTime">
+      <button onclick="fetchData();">submit</button>
+      <div id="data-container"></div>
+
+   </div>
+
+   <script>
+
+      function fetchData() {
+         const baseDate = document.getElementById('baseDate').value;
+         const baseTime = document.getElementById('baseTime').value;
+         // const baseDate = '20220926';
+         // const baseTime = '1800';
+
+         const METEOROLOGICALAGENCYKOREA_API_KEY = 'AN31IO7l4%2FY3rLiPCz5OFT5DQJOf06W9QvkEVem6H%2BL5X2OxO0ox5VL3iRKqPeRVTKFgZjesO0%2FTaULh8F0hRA%3D%3D';
+         const METEOROLOGICALAGENCYKOREA_API_URL = `http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=${METEOROLOGICALAGENCYKOREA_API_KEY}&numOfRows=9999&pageNo=1&dataType=JSON&base_date=${baseDate}&base_time=${baseTime}&nx=55&ny=127`;
+
+         fetch(METEOROLOGICALAGENCYKOREA_API_URL)
+            .then(response => response.json())
+            .then(response => { 
+               console.log(response);
+               const weatherData = response.response.body.items.item;
+               // console.log(weatherData);
+
+               let weatherForecast = `
+                  <p>${weatherData[0].baseDate} ${weatherData[0].baseTime} nx=${weatherData[0].nx} ny=${weatherData[0].ny} 기상 정보</p>
+                  <table>
+                     <tr><th>강수형태</th><th>습도 [%]</th><th>1시간 강수량 [mm]</th><th>기온 [°C]</th><th>풍향 [°]</th><th>풍속 [m/sec]</th></tr>
+                     <tr>
+               `;
+
+               weatherData.forEach(element => {
+
+                  console.log(element);
+                  switch (element.category) {
+                     case 'PTY' : switch (element.obsrValue) {
+                                    case '0' : weatherForecast += '<td>코드없음</td>'; break;
+                                    case '1' : weatherForecast += '<td>비</td>'; break;
+                                    case '2' : weatherForecast += '<td>비/눈</td>'; break;
+                                    case '3' : weatherForecast += '<td>눈</td>'; break;
+                                    case '5' : weatherForecast += '<td>빗방울</td>'; break;
+                                    case '6' : weatherForecast += '<td>빗방울눈날림</td>'; break;
+                                    case '7' : weatherForecast += '<td>눈날림</td>'; break;
+                                    // default  : weatherForecast += '강수형태(PTY) 코드 : 없음'; 
+                                 }; break;
+                     case 'REH' : weatherForecast += `<td>${element.obsrValue}</td>`; break;
+                     case 'RN1' : weatherForecast += `<td>${element.obsrValue}</td>`; break;
+                     case 'T1H' : weatherForecast += `<td>${element.obsrValue}</td>`; break;
+                     // case 'UUU' : weatherForecast += `<td>풍속(동서성분) : ${element.obsrValue}m/sec</td>`; break;
+                     // case 'VVV' : weatherForecast += `<td>풍속(남북성분) : ${element.obsrValue}m/sec</td>`; break;
+                     case 'VEC' : weatherForecast += `<td>${element.obsrValue}</td>`; break;
+                     case 'WSD' : weatherForecast += `<td>${element.obsrValue}</td>`; break;
+                  };
+               });
+               weatherForecast += `
+                     </tr>
+                  </table>
+               `;
+               document.getElementById('data-container').innerHTML = weatherForecast;
+               console.log(weatherForecast);
+         });
+      };
+      
+   </script>
+</body>
+</html>
